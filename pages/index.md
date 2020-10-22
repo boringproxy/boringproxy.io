@@ -1,5 +1,8 @@
 # What is it?
 
+You're using it right now! The website you're reading is hosted on my home
+computer, through boringproxy.
+
 boringproxy is a combination reverse proxy and tunnel manager.
 
 If you have a web service (Nextcloud, Emby, Jellyfin, personal website, etc)
@@ -10,39 +13,42 @@ expose that server to the internet, so you can access it from anywhere.
 boringproxy provides a lightning fast web GUI for managing tunnels, and the
 client software works on Linux, Windows, Mac, and ARM (ie raspberry pi).
 
-The site you're reading right now is being hosted through boringproxy.
-
 It is 100% free and open source under the MIT license. The server ships as
-single executable, And requires extremely little configuration (no config file
-and only a single required command line parameter).
+single executable, and requires extremely little configuration (no config file
+and only one required command line parameter).
 
 
 # How does it compare to other software I may be familiar with?
 
-## ngrok/localtunnel/etc
+## Other tunneling solutions (ngrok, localtunnel, etc)
 
-boringproxy is very similar to ngrok and other tunneling software. If you're
-already familiar with this sort of thing, I recommend going straight to the
-[tunneling comparison] to see how it's different. The TL;DR is that I would
-consider most of the others to be tools made for developers which happen to be
-useful for self-hosters.  boringproxy is a tool made specifically for
-self-hosters (though it's still very useful for developers like myself). See
-the full comparison for details.
+boringproxy is very similar to ngrok and other tunneling software. There are a
+lot out there (I maintain a list [here][0]). Many of them even provide reverse
+proxy functionality. If you're already familiar with this sort of thing, I
+recommend going straight to the [tunneling comparison] to see how boringproxy is
+different.
+
+The TL;DR is that I would consider most of the others to be tools
+made for developers which happen to be useful for self-hosters.  boringproxy is
+a tool made specifically for self-hosters (though it's still very useful for
+developers like myself). See the full comparison for details.
 
 [tunneling comparison]: #tunnel-comparison
 
+[0]: https://github.com/anderspitman/awesome-tunneling
 
-## Reverse proxies (Caddy/nginx/traefik/etc)
+
+## Other reverse proxies (Caddy, nginx, traefik, etc)
 
 Reverse proxies handle many different tasks. These typically involve things
 like providing HTTPS in front of insecure servers, caching, load balancing,
 automatic gzip compression, HTTP/2 connections, etc.
 
-However, what these proxies lack for our use case is the ability to tunnel
-the web connections into a private network. They can only access ports that are
-directly available to the proxy server. So you have to either run your upstream
-servers on the same network as the reverse proxy, or set up your own tunneling
-system.
+However, what these proxies lack for our use case is the ability to tunnel the
+web connections into a private network. They can only access IP addresses and
+ports that are directly available to the proxy server. So you have to either
+run your upstream servers on the same network as the reverse proxy, or set up
+your own tunneling system.
 
 boringproxy solves both of these in one service. It includes a minimal, fast
 reverse proxy with a robust SSH-based tunneling system.
