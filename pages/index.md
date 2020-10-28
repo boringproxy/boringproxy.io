@@ -5,23 +5,28 @@ computer, through boringproxy.
 
 boringproxy is a combination reverse proxy and tunnel manager.
 
-What that means is if you have a web service (Nextcloud, Emby, Jellyfin,
-personal website, etc) running on a private network (such as behind a [NAT] at
-home), boringproxy aims to provide the easiest way to securely (ie HTTPS and
-password-protection) expose that server to the internet, so you can access it
-from anywhere.
+What that means is if you have a self-hosted web service (Nextcloud, Emby,
+Jellyfin, personal website, etc) running on a private network (such as behind a
+[NAT] at home), boringproxy aims to provide the easiest way to securely (ie
+HTTPS and optional password-protection) expose that server to the internet, so you can
+access it from anywhere.
 
-To see how boringproxy compares to other software, see the
+To see how boringproxy compares to other similar software, see the
 [comparison here](/tunneling-comparison/).
 
-boringproxy provides a lightning fast web GUI for managing tunnels, and the
-client software works on Linux, Windows, Mac, and ARM (ie raspberry pi). You
-can even use the basic functionality with a standard SSH client.
+The main features are:
 
-boringproxy is 100% free and open source under the MIT license. It ships as
-single executable which contains both the server and client, and requires
-extremely little configuration (no config file and only one required command
-line parameter).
+* 100% free and open source under the MIT license.
+* Designed from the ground up with self-hosters in mind.
+* No more port forwarding, NAT traversal, firewall rules, HTTPS certificate
+  management, etc etc. Let boringproxy handle it all for you.
+* No config files. Seriously, none. It has nice defaults and the few knobs are
+  easily adjusted with simple CLI parameters.
+* Lightning fast web GUI for managing tunnels from one central place. It even
+  works great on mobile browsers.
+* The client software works on Linux, Windows, Mac, and ARM (ie raspberry pi).
+* Ships as single executable which contains both the server and client.
+* SSH under the hood. You can use a standard SSH client if you prefer.
 
 # TODO demo video
 
@@ -30,8 +35,8 @@ line parameter).
 # What's with the name?
 
 The name has two meanings; one pun and one philosophy. The pun is "bore" as in
-bore a tunnel, highlighting the fact that boringproxy is a reverse proxy that
-automatically manages making tunnels.
+bore a hole/tunnel, highlighting the fact that boringproxy is a reverse proxy
+that automatically manages making tunnels.
 
 The philosophy is that boring (as in boredom) software is often the most useful
 software.  If you have to interact with boringproxy to get something done, I
@@ -45,6 +50,3 @@ question I ask myself is: is it boring enough?
 
 [NAT]: https://en.wikipedia.org/wiki/Network_address_translation
 
-[CDN]: https://en.wikipedia.org/wiki/Content_delivery_network
-
-[VPN]: https://en.wikipedia.org/wiki/Virtual_private_network
