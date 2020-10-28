@@ -24,6 +24,16 @@ for (const pageMd of pagesFiles) {
 
   const mdText = fs.readFileSync(path.join(pagesDir, pageMd.name), 'utf-8');
   const htmlText = headerHtml + marked(mdText) + footerHtml;
-  const htmlFilename = path.parse(pageMd.name).name + '.html';
-  fs.writeFileSync(path.join(outDir, htmlFilename), htmlText);
+  const pageName = path.parse(pageMd.name).name;
+
+  let htmlDir;
+  if (pageName === 'index') {
+    htmlDir = outDir;
+  }
+  else {
+    htmlDir = path.join(outDir, pageName);
+    fs.mkdirSync(htmlDir, { recursive: true });
+  }
+
+  fs.writeFileSync(path.join(htmlDir, 'index.html'), htmlText);
 }

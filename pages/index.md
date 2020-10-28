@@ -12,7 +12,7 @@ password-protection) expose that server to the internet, so you can access it
 from anywhere.
 
 To see how boringproxy compares to other software, see the
-[comparison here](./tunneling-comparison.html).
+[comparison here](/tunneling-comparison/).
 
 boringproxy provides a lightning fast web GUI for managing tunnels, and the
 client software works on Linux, Windows, Mac, and ARM (ie raspberry pi). You
