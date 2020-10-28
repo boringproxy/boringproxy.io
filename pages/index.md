@@ -1,105 +1,31 @@
-# What is it?
+# What is boringproxy?
 
 You're using it right now! The website you're reading is hosted on my home
 computer, through boringproxy.
 
 boringproxy is a combination reverse proxy and tunnel manager.
 
-If you have a web service (Nextcloud, Emby, Jellyfin, personal website, etc)
-running on a private network (such as behind a [NAT] at home), boringproxy aims
-to provide the easiest way to securely (ie HTTPS and password-protection)
-expose that server to the internet, so you can access it from anywhere.
+What that means is if you have a web service (Nextcloud, Emby, Jellyfin,
+personal website, etc) running on a private network (such as behind a [NAT] at
+home), boringproxy aims to provide the easiest way to securely (ie HTTPS and
+password-protection) expose that server to the internet, so you can access it
+from anywhere.
+
+To see how boringproxy compares to other software, see the
+[comparison here](./tunneling-comparison.html).
 
 boringproxy provides a lightning fast web GUI for managing tunnels, and the
-client software works on Linux, Windows, Mac, and ARM (ie raspberry pi).
+client software works on Linux, Windows, Mac, and ARM (ie raspberry pi). You
+can even use the basic functionality with a standard SSH client.
 
-It is 100% free and open source under the MIT license. The server ships as
-single executable, and requires extremely little configuration (no config file
-and only one required command line parameter).
+boringproxy is 100% free and open source under the MIT license. It ships as
+single executable which contains both the server and client, and requires
+extremely little configuration (no config file and only one required command
+line parameter).
 
+# TODO demo video
 
-# How does it compare to other software I may be familiar with?
-
-## Other tunneling solutions (ngrok, localtunnel, etc)
-
-boringproxy is very similar to ngrok and other tunneling software. There are a
-lot out there (I maintain a list [here][0]). Many of them even provide reverse
-proxy functionality. If you're already familiar with this sort of thing, I
-recommend going straight to the [tunneling comparison] to see how boringproxy is
-different.
-
-The TL;DR is that I would consider most of the others to be tools
-made for developers which happen to be useful for self-hosters.  boringproxy is
-a tool made specifically for self-hosters (though it's still very useful for
-developers like myself). See the full comparison for details.
-
-[tunneling comparison]: #tunnel-comparison
-
-[0]: https://github.com/anderspitman/awesome-tunneling
-
-
-## Other reverse proxies (Caddy, nginx, traefik, etc)
-
-Reverse proxies handle many different tasks. These typically involve things
-like providing HTTPS in front of insecure servers, caching, load balancing,
-automatic gzip compression, HTTP/2 connections, etc.
-
-However, what these proxies lack for our use case is the ability to tunnel the
-web connections into a private network. They can only access IP addresses and
-ports that are directly available to the proxy server. So you have to either
-run your upstream servers on the same network as the reverse proxy, or set up
-your own tunneling system.
-
-boringproxy solves both of these in one service. It includes a minimal, fast
-reverse proxy with a robust SSH-based tunneling system.
-
-## Commercial VPN products (NordVPN, ExpressVPN, PIA, etc)
-
-People use commerical [VPN]s for a variety of purposes. Two of the most common
-are accessing content that's only available in certain countries, and hiding
-your browsing behavior from your ISP.
-
-While the technology involved is very similiar, the goals of boringproxy and
-a VPN are somewhat different. boringproxy provides the outside world with
-secure access to your private services. VPNs allow you to tunnel out of your
-private network so you appear to be connecting from somewhere else.
-
-
-## Personal VPN (OpenVPN/WireGuard/etc)
-
-Personal VPNs again share a lot of technology with boringproxy. In fact,
-if you had a WireGuard network set up and put Caddy on one of your public
-servers, that would be a great way to accomplish what boringproxy does. The
-downside is you have to manage all the pieces separately.
-
-
-## Cloudflare
-
-Cloudflare is sort of like a supercharged reverse proxy. In additional to all
-of the features mentioned above, it also provides a [CDN] which caches and
-distributes your server responses all over the world with low latency.
-
-Cloudflare even includes a service for tunneling, which is discussed in the
-full [tunneling comparison].
-
-boringproxy and Cloudflare are actually a great combination. You can use
-boringproxy to tunnel your services, and Cloudflare as a free CDN.
-
-
-## Web hosting services (Wordpress/Netlify/etc)
-
-
-# Comparison with other tunneling options <a name='tunnel-comparison'></a>
-
-
-## ngrok
-
-ngrok is probably the best-known tunneling software available.
-
-## localtunnel
-
-localtunnel is a popular open source/self-hosted alternative to ngrok.
-
+# TODO demo instance signup
 
 # What's with the name?
 
