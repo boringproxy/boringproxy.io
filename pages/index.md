@@ -30,7 +30,18 @@ The main features are:
 
 # TODO demo video
 
-# TODO demo instance signup
+# Demo Instance
+
+There is a demo instance at `https://brng.pro`. If you submit your email
+address using the form below, it will create an account for you and send you
+a login link to play with the demo.
+
+<form action='https://demo-signup.boringproxy.io/request' method='POST'>
+  <label for='email-input'>Email:</label>
+  <input type='text' id='email-input' name='email'>
+  <input type='submit' class='button'>
+</form>
+
 
 # What's with the name?
 

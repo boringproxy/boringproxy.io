@@ -38,3 +38,25 @@ pre {
   font-size: 14px;
   overflow-x: auto;
 }
+
+.button {
+  padding: .5em 1em;
+  margin: 5px;
+  border: 2px solid #000;
+  border-radius: .5em;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  font-family: -system-ui, sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.button:hover {
+  color: #555555;
+  background-color: #fff;
+  border: 2px solid #000;
+}
