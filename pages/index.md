@@ -6,7 +6,7 @@ computer, through boringproxy.
 boringproxy is a combination reverse proxy and tunnel manager.
 
 What that means is if you have a self-hosted web service (Nextcloud, Emby,
-Jellyfin, personal website, etc) running on a private network (such as behind a
+Jellyfin, etherpad, personal website, etc) running on a private network (such as behind a
 [NAT] at home), boringproxy aims to provide the easiest way to securely (ie
 HTTPS and optional password-protection) expose that server to the internet, so you can
 access it from anywhere.
@@ -24,17 +24,41 @@ The main features are:
   easily adjusted with simple CLI parameters.
 * Lightning fast web GUI for managing tunnels from one central place. It even
   works great on mobile browsers.
+* Fully configurable through a REST API.
 * The client software works on Linux, Windows, Mac, and ARM (ie raspberry pi).
 * Ships as single executable which contains both the server and client.
 * SSH under the hood. You can use a standard SSH client if you prefer.
 
-# TODO demo video
+# Server Installation
+
+```bash
+curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.1.0/boringproxy
+
+# Make executable
+chmod +x boringproxy
+
+# Allow binding to ports 80 and 443
+sudo setcap cap_net_bind_service=+ep boringproxy
+```
+
+# Demo Video
+
+<a href='https://www.youtube.com/watch?v=-kACP0X6E-I'>YouTube mirror</a>
+<a href='/demo.webm' download='boringproxy_demo.webm'>Download WebM/VP9</a>
+<a href='/demo.mp4' download='boringproxy_demo.mp4'>Download MP4/h264</a>
+
+<video controls width="100%">
+  <source src="/demo.webm" type="video/webm">
+  <source src="/demo.mp4" type="video/mp4">
+  Sorry, your browser doesn't support embedded videos.
+</video>
+
 
 # Demo Instance
 
-There is a demo instance at `https://brng.pro`. If you submit your email
+There is a demo instance at `https://bpdemo.brng.pro`. If you submit your email
 address using the form below, it will create an account for you and send you
-a login link to play with the demo.
+a login link so you can create tunnels.
 
 <form action='https://demo-signup.boringproxy.io/request' method='POST'>
   <label for='email-input'>Email:</label>

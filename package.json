@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "highlight.js": "^10.3.2",
     "highlightjs": "^9.16.2",
     "marked": "^1.2.2"
   }

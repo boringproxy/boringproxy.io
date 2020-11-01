@@ -3,6 +3,14 @@
 const fs = require('fs');
 const path = require('path');
 const marked = require('marked');
+const hljs = require('highlightjs');
+
+marked.setOptions({
+  highlight: function(code, lang) {
+    const highlighted = hljs.highlightAuto(code);
+    return highlighted.value;
+  },
+});
 
 const inDir = './';
 const outDir = './';
