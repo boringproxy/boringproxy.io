@@ -76,7 +76,7 @@ sudo setcap cap_net_bind_service=+ep boringproxy
 
 The clients will then be able to assign domains from the wildcard subdomain without having to reconfigure DNS beforehand.
 
-## [Usage](/usage/)
+## Usage
 
 Learn more about the [usage](/usage/) in the documentation.
 
