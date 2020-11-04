@@ -63,3 +63,7 @@ pre {
 
 .big-font {
 }
+
+img {
+  max-width: 100%;
+}
