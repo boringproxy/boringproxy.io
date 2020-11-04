@@ -13,7 +13,8 @@ marked.setOptions({
 });
 
 const inDir = './';
-const outDir = './';
+const outDir = (process.argv.length !== 3) ? './' : `./${process.argv[2]}/`;
+fs.mkdirSync(outDir, { recursive: true });
 
 const partialsDir = path.join(inDir, 'partials');
 
@@ -44,4 +45,10 @@ for (const pageMd of pagesFiles) {
   }
 
   fs.writeFileSync(path.join(htmlDir, 'index.html'), htmlText);
+}
+
+if (outDir != './') {
+  for (file of ["styles.css", "logo.svg", "screenshot.png"]) {
+    fs.copyFileSync(`${file}`, path.join(outDir, file))
+  }
 }
