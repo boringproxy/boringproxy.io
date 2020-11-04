@@ -3,7 +3,7 @@
 You're using it right now! The website you're reading is hosted on my home
 computer, through boringproxy.
 
-boringproxy is a combination reverse proxy and tunnel manager.
+`boringproxy` is a combination of reverse proxy and tunnel manager.
 
 What that means is if you have a self-hosted web service (Nextcloud, Emby,
 Jellyfin, etherpad, personal website, etc) running on a private network (such as behind a
@@ -29,19 +29,7 @@ The main features are:
 * Ships as single executable which contains both the server and client.
 * SSH under the hood. You can use a standard SSH client if you prefer.
 
-# Server Installation
-
-```bash
-curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.1.0/boringproxy
-
-# Make executable
-chmod +x boringproxy
-
-# Allow binding to ports 80 and 443
-sudo setcap cap_net_bind_service=+ep boringproxy
-```
-
-# Demo Video
+## Demo Video
 
 <a href='https://www.youtube.com/watch?v=-kACP0X6E-I'>YouTube mirror</a>
 <a href='/demo.webm' download='boringproxy_demo.webm'>Download WebM/VP9</a>
@@ -53,8 +41,7 @@ sudo setcap cap_net_bind_service=+ep boringproxy
   Sorry, your browser doesn't support embedded videos.
 </video>
 
-
-# Demo Instance
+## Demo Instance
 
 There is a demo instance at `https://bpdemo.brng.pro`. If you submit your email
 address using the form below, it will create an account for you and send you
@@ -66,8 +53,34 @@ a login link so you can create tunnels.
   <input type='submit' class='button'>
 </form>
 
+## Installation
 
-# What's with the name?
+The program is shipped in one binary that acts both as a server and a client.
+
+Acquire it as below:
+
+```bash
+curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.1.0/boringproxy
+
+# Make executable
+chmod +x boringproxy
+
+# Allow binding to ports 80 and 443
+sudo setcap cap_net_bind_service=+ep boringproxy
+```
+
+`boringproxy` uses the DNS to identify the server and the tunnel endpoints. An often used pattern is to provide a domain record for the administrative web interface, and a wildcard subdomain for the tunneled services.
+
+* `bpdemo.brng.pro` - the fully qualified domain name (FQDN) of the host where boringproxy will be running.
+* `*.bpdemo.brng.pro` - a wildcard subdomain for effortless domain mapping of clients
+
+The clients will then be able to assign domains from the wildcard subdomain without having to reconfigure DNS beforehand.
+
+## [Usage](/usage/)
+
+Learn more about the [usage](/usage/) in the documentation.
+
+## What's with the name?
 
 The name has two meanings; one pun and one philosophy. The pun is "bore" as in
 bore a hole/tunnel, highlighting the fact that boringproxy is a reverse proxy
@@ -82,6 +95,4 @@ This also has implications when it comes to adding features. I want boringproxy
 to remain simple and focused. When contemplating adding any feature, the first
 question I ask myself is: is it boring enough?
 
-
 [NAT]: https://en.wikipedia.org/wiki/Network_address_translation
-
