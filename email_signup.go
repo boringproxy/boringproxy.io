@@ -136,12 +136,12 @@ func main() {
                 }
                 defer resp.Body.Close()
 
-                if resp.StatusCode != 200 {
-                        w.WriteHeader(500)
-                        body, _ := ioutil.ReadAll(resp.Body)
-                        w.Write(body)
-                        return
-                }
+                //if resp.StatusCode != 200 {
+                //        w.WriteHeader(500)
+                //        body, _ := ioutil.ReadAll(resp.Body)
+                //        w.Write(body)
+                //        return
+                //}
 
                 createTokenUrl := fmt.Sprintf("%s/tokens/?access_token=%s&owner=%s", apiUrl, config.Token, email)
                 resp, err = http.Post(createTokenUrl, "application/json", nil)
