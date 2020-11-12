@@ -3,7 +3,7 @@
 You're using it right now! The website you're reading is hosted on my home
 computer, through boringproxy.
 
-`boringproxy` is a combination of reverse proxy and tunnel manager.
+`boringproxy` is a combination of a reverse proxy and a tunnel manager.
 
 What that means is if you have a self-hosted web service (Nextcloud, Emby,
 Jellyfin, etherpad, personal website, etc) running on a private network (such as behind a
@@ -55,7 +55,7 @@ a login link so you can create tunnels.
 
 ## Installation
 
-The program is shipped in one binary that acts both as a server and a client.
+The program is shipped in one executable file that acts both as the server and the client.
 
 Acquire it as below:
 

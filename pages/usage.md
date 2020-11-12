@@ -26,7 +26,7 @@ Example:
 boringproxy server -admin-domain bpdemo.brng.pro
 ```
 
-Upon first run a configuration file `boringproxy_db.json` with admin credentials will be created and a login link is displayed that looks like:
+Upon first run a simple text database file `boringproxy_db.json` with admin credentials will be created and a login link is displayed that looks like:
 
 > `https://<FQDN>/login?access_token=<TOKEN>`
 
@@ -74,7 +74,7 @@ Access it at `https://<FQDN>/` where you will be presented with a prompt for a t
 
 ### Tunnels
 
-The tunnels pane allows to create and remove tunnels. It offers you to specify the settings of a tunnel:
+The tunnels pane allows creating and removing tunnels. It provides a way for you to specify the settings of a tunnel:
 
 * **Domain**  
   The FQDN of a domain pointing at the `boringproxy` server. With DNS wildcard setup, this can be any subdomain of the `admin-domain`.
