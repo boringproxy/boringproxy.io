@@ -7,7 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ssg.js",
+    "watch": "./watch-build.sh",
+    "clean": "./clean.sh"
   },
   "author": "",
   "license": "ISC",

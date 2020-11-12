@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ls pages/* partials/* | entr ./ssg.js
+ls pages/* partials/* | entr ./ssg.js $1
