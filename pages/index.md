@@ -25,9 +25,13 @@ The main features are:
 * Lightning fast web GUI for managing tunnels from one central place. It even
   works great on mobile browsers.
 * Fully configurable through a REST API.
-* The client software works on Linux, Windows, Mac, and ARM (ie raspberry pi).
+* The client software works on Linux, Windows, Mac, and ARM (ie Raspberry Pi
+  and Android).
 * Ships as single executable which contains both the server and client.
 * SSH under the hood. You can use a standard SSH client if you prefer.
+* End-to-end encryption (since version 0.4.0). Choose whether to terminate TLS
+  at the server, client, or your application. All handled seamlessly with
+  Let's Encrypt integration.
 
 ## Demo Video
 
