@@ -77,7 +77,7 @@ Access it at `https://<FQDN>/` where you will be presented with a prompt for a t
 The tunnels pane allows creating and removing tunnels. It provides a way for you to specify the settings of a tunnel:
 
 * **Domain**  
-  The FQDN of a domain pointing at the `boringproxy` server. With DNS wildcard setup, this can be any subdomain of the `admin-domain`.
+  The FQDN of a domain pointing at the `boringproxy` server. With DNS wildcard setup, this can be any subdomain of the `admin-domain`. You must insert the **full domain** that you want the tunnel to be accessed from, not just the subdomain. For example, if you had a wildcard DNS record `*bpdemo.brng.pro` pointing to your boringproxy server, and you wanted a media server to be accessed at `media.bpdemo.brng.pro`, you would have to insert `media.bpdemo.brng.pro` to this field.
 * **Client Name**  
   Choose a connected client as tunnel partner
 * **Client Address**  
