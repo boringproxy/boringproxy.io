@@ -64,13 +64,13 @@ The program is shipped in one executable file that acts both as the server and t
 Acquire it as below:
 
 ```bash
-curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.1.0/boringproxy
+curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.5.0/boringproxy-linux-amd64
 
 # Make executable
-chmod +x boringproxy
+chmod +x boringproxy-linux-amd64
 
 # Allow binding to ports 80 and 443
-sudo setcap cap_net_bind_service=+ep boringproxy
+sudo setcap cap_net_bind_service=+ep boringproxy-linux-amd64
 ```
 
 `boringproxy` uses the DNS to identify the server and the tunnel endpoints. An often used pattern is to provide a domain record for the administrative web interface, and a wildcard subdomain for the tunneled services.
