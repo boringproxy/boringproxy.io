@@ -25,7 +25,7 @@ The main features are:
 * Lightning fast web GUI for managing tunnels from one central place. It even
   works great on mobile browsers.
 * Fully configurable through a REST API.
-* The client software works on Linux, Windows, Mac, and ARM (ie Raspberry Pi
+* The client software works on Linux, Windows, Mac, and ARM (i.e. Raspberry Pi
   and Android).
 * Ships as single executable which contains both the server and client.
 * SSH under the hood. You can use a standard SSH client if you prefer.
