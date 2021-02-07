@@ -6,8 +6,8 @@ computer, through boringproxy.
 `boringproxy` is a combination of a reverse proxy and a tunnel manager.
 
 What that means is if you have a self-hosted web service (Nextcloud, Emby,
-Jellyfin, etherpad, personal website, etc) running on a private network (such as behind a
-[NAT] at home), boringproxy aims to provide the easiest way to securely (ie
+Jellyfin, etherpad, personal website, etc.) running on a private network (such as behind a
+[NAT] at home), boringproxy aims to provide the easiest way to securely (i.e.
 HTTPS and optional password-protection) expose that server to the internet, so you can
 access it from anywhere.
 
