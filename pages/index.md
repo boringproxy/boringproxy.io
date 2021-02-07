@@ -115,7 +115,7 @@ chmod +x boringproxy-linux-arm64
 sudo setcap cap_net_bind_service=+ep boringproxy-linux-arm64
 </pre>
 </details>
-See the [releases page](https://github.com/boringproxy/boringproxy/releases) for downloads for macOS and Windows.
+See the <a href="https://github.com/boringproxy/boringproxy/releases">releases page</a> for downloads for macOS and Windows.
 </details>
 
 
