@@ -59,65 +59,7 @@ a login link so you can create tunnels.
 
 ## Installation
 
-The program is shipped in one executable file that acts both as the server and the client.
-
-Acquire it as below for your system:
-<details open>
-<summary>Linux amd64</summary>
-<pre>
-curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.5.0/boringproxy-linux-amd64d
-
-# Make executable
-chmod +x boringproxy-linux-amd64
-
-# Allow binding to ports 80 and 443
-sudo setcap cap_net_bind_service=+ep boringproxy-linux-amd64
-</pre>
-</details>
-<details>
-<summary>Other operating systems and architectures</summary>
-
-<details>
-<summary>Linux i386</summary>
-<pre>
-curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.5.0/boringproxy-linux-386
-
-# Make executable
-chmod +x boringproxy-linux-386
-
-# Allow binding to ports 80 and 443
-sudo setcap cap_net_bind_service=+ep boringproxy-linux-386
-</pre>
-</details>
-
-<details>
-<summary>Linux ARM</summary>
-<pre>
-curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.5.0/boringproxy-linux-arm
-
-# Make executable
-chmod +x boringproxy-linux-arm
-
-# Allow binding to ports 80 and 443
-sudo setcap cap_net_bind_service=+ep boringproxy-linux-arm
-</pre>
-</details>
-
-<details>
-<summary>Linux arm64</summary>
-<pre>
-curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.5.0/boringproxy-linux-arm64
-
-# Make executable
-chmod +x boringproxy-linux-arm64
-
-# Allow binding to ports 80 and 443
-sudo setcap cap_net_bind_service=+ep boringproxy-linux-arm64
-</pre>
-</details>
-See the <a href="https://github.com/boringproxy/boringproxy/releases">releases page</a> for downloads for macOS and Windows.
-</details>
-
+Learn more about the [installation](/installation/) in the documentation.
 
 `boringproxy` uses the DNS to identify the server and the tunnel endpoints. An often used pattern is to provide a domain record for the administrative web interface, and a wildcard subdomain for the tunneled services.
 
