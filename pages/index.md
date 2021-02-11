@@ -6,8 +6,8 @@ computer, through boringproxy.
 `boringproxy` is a combination of a reverse proxy and a tunnel manager.
 
 What that means is if you have a self-hosted web service (Nextcloud, Emby,
-Jellyfin, etherpad, personal website, etc) running on a private network (such as behind a
-[NAT] at home), boringproxy aims to provide the easiest way to securely (ie
+Jellyfin, etherpad, personal website, etc.) running on a private network (such as behind a
+[NAT] at home), boringproxy aims to provide the easiest way to securely (i.e.
 HTTPS and optional password-protection) expose that server to the internet, so you can
 access it from anywhere.
 
@@ -25,7 +25,7 @@ The main features are:
 * Lightning fast web GUI for managing tunnels from one central place. It even
   works great on mobile browsers.
 * Fully configurable through a REST API.
-* The client software works on Linux, Windows, Mac, and ARM (ie Raspberry Pi
+* The client software works on Linux, Windows, Mac, and ARM (i.e. Raspberry Pi
   and Android).
 * Ships as single executable which contains both the server and client.
 * SSH under the hood. You can use a standard SSH client if you prefer.
@@ -59,19 +59,7 @@ a login link so you can create tunnels.
 
 ## Installation
 
-The program is shipped in one executable file that acts both as the server and the client.
-
-Acquire it as below:
-
-```bash
-curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.5.0/boringproxy-linux-amd64
-
-# Make executable
-chmod +x boringproxy-linux-amd64
-
-# Allow binding to ports 80 and 443
-sudo setcap cap_net_bind_service=+ep boringproxy-linux-amd64
-```
+Learn more about the [installation](/installation/) in the documentation.
 
 `boringproxy` uses the DNS to identify the server and the tunnel endpoints. An often used pattern is to provide a domain record for the administrative web interface, and a wildcard subdomain for the tunneled services.
 
