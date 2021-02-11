@@ -1,4 +1,4 @@
-#Installation
+# Installation
  The program is shipped in one executable file that acts both as the server and the client.
 
 Acquire it as below for your system:
