@@ -3,20 +3,20 @@
 
 Acquire it as below for your system:
 
-## Linux amd64
+## Linux x86_64
 ```bash
-curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.5.0/boringproxy-linux-amd64d
+curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.6.0/boringproxy-linux-x86_64
 
 # Make executable
-chmod +x boringproxy-linux-amd64
+chmod +x boringproxy-linux-x86_64
 
 # Allow binding to ports 80 and 443
-sudo setcap cap_net_bind_service=+ep boringproxy-linux-amd64
+sudo setcap cap_net_bind_service=+ep boringproxy-linux-x86_64
 ```
 
 ## Linux i386
 ```bash
-curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.5.0/boringproxy-linux-386
+curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.6.0/boringproxy-linux-386
 
 # Make executable
 chmod +x boringproxy-linux-386
@@ -26,7 +26,7 @@ sudo setcap cap_net_bind_service=+ep boringproxy-linux-386
 ```
 ## Linux ARM
 ```bash
-curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.5.0/boringproxy-linux-arm
+curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.6.0/boringproxy-linux-arm
 
 # Make executable
 chmod +x boringproxy-linux-arm
@@ -36,7 +36,7 @@ sudo setcap cap_net_bind_service=+ep boringproxy-linux-arm
 ```
 ## Linux arm64
 ```bash
-curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.5.0/boringproxy-linux-arm64
+curl -LO https://github.com/boringproxy/boringproxy/releases/download/v0.6.0/boringproxy-linux-arm64
 
 # Make executable
 chmod +x boringproxy-linux-arm64
