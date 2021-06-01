@@ -1,5 +1,7 @@
 # Installation
  The program is shipped in one executable file that acts both as the server and the client.
+ 
+ Note: OpenSSH version 7.8+ is required. 
 
 Acquire it as below for your system:
 
