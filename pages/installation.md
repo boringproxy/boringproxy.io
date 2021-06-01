@@ -46,6 +46,8 @@ chmod +x boringproxy-linux-arm64
 # Allow binding to ports 80 and 443
 sudo setcap cap_net_bind_service=+ep boringproxy-linux-arm64
 ```
+
+You may need to allow connecting to remote forwarded ports from outside the server host. To do this, you shoud edit `/etc/ssh/sshd_config` and replace `GatewayPorts no` with  `GatewayPorts clientspecified`.
 ## Windows and macOS
 See the <a href="https://github.com/boringproxy/boringproxy/releases">releases page</a> for downloads.
 Note: macOS support is untested. 
