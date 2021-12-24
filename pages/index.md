@@ -10,8 +10,10 @@ and I'll try to help as I have time.
 
 # What is boringproxy?
 
+<!--
 You're using it right now! The website you're reading is hosted on my home
 computer, through boringproxy.
+-->
 
 `boringproxy` is a combination of a reverse proxy and a tunnel manager.
 
