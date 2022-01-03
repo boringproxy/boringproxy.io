@@ -1,13 +1,3 @@
-# Disclaimer
-
-boringproxy is currently beta-quality software. While I am a big believer in
-open source, my primary goal at the moment is to build a sustainable
-business around the code I write. So for the most part I can only afford to
-spend time fixing problems that arise in my own usage of boringproxy. That
-said, feel free to create
-[GitHub issues](https://github.com/boringproxy/boringproxy/issues)
-and I'll try to help as I have time.
-
 # What is boringproxy?
 
 <!--
@@ -45,7 +35,7 @@ The main features are:
   at the server, client, or your application. All handled seamlessly with
   Let's Encrypt integration.
 
-## Demo Video
+# Demo Video
 
 <a href='https://www.youtube.com/watch?v=-kACP0X6E-I'>YouTube mirror</a>
 <a href='/demo.webm' download='boringproxy_demo.webm'>Download WebM/VP9</a>
@@ -57,7 +47,8 @@ The main features are:
   Sorry, your browser doesn't support embedded videos.
 </video>
 
-## Demo Instance
+
+# Demo Instance
 
 There is a demo instance at `https://bpdemo.brng.pro`. If you submit your email
 address using the form below, it will create an account for you and send you
@@ -69,7 +60,8 @@ a login link so you can create tunnels.
   <input type='submit' class='button'>
 </form>
 
-## Installation
+
+# Installation
 
 Learn more about the [installation](/installation/) in the documentation.
 
@@ -80,11 +72,21 @@ Learn more about the [installation](/installation/) in the documentation.
 
 The clients will then be able to assign domains from the wildcard subdomain without having to reconfigure DNS beforehand.
 
-## Usage
+
+# Usage
 
 Learn more about the [usage](/usage/) in the documentation.
 
-## What's with the name?
+
+# Getting Help
+
+If you run into problems running boringproxy, the best place to ask for help is
+over at the [IndieBits][0] community, where we have a [dedicated section][1] for
+boringproxy support. If you think you've found a bug, or want to discuss
+development, please [open an issue][github] on GitHub.
+
+
+# What's with the name?
 
 The name has two meanings; one pun and one philosophy. The pun is "bore" as in
 bore a hole/tunnel, highlighting the fact that boringproxy is a reverse proxy
@@ -100,3 +102,9 @@ to remain simple and focused. When contemplating adding any feature, the first
 question I ask myself is: is it boring enough?
 
 [NAT]: https://en.wikipedia.org/wiki/Network_address_translation
+
+[0]: https://forum.indiebits.io
+
+[1]: https://forum.indiebits.io/c/boringproxy-support/9
+
+[github]: https://github.com/boringproxy/boringproxy/issues
