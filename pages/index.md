@@ -1,4 +1,4 @@
-boringproxy development is sponsored by [TakingNames.io](https://takingnames.io).
+boringproxy development is sponsored by [TakingNames.io](https://takingnames.io/blog/introducing-takingnames-io).
 boringproxy offers full integration with TakingNames.io, providing the simplest
 way to get up and running with your own domain. More information [here](https://takingnames.io/blog/introducing-takingnames-io),
 and a demo video of boringproxy working with TakingNames.io [here](https://youtu.be/9hf72-fYTts).
