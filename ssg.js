@@ -13,7 +13,7 @@ marked.setOptions({
 });
 
 const inDir = './';
-const outDir = (process.argv.length !== 3) ? './' : `./${process.argv[2]}/`;
+const outDir = (process.argv.length !== 3) ? 'docs' : `./${process.argv[2]}/`;
 fs.mkdirSync(outDir, { recursive: true });
 
 const partialsDir = path.join(inDir, 'partials');
