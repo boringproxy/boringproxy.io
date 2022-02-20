@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const marked = require('marked');
+const { marked } = require('marked');
 const hljs = require('highlightjs');
 
 marked.setOptions({
@@ -32,7 +32,7 @@ for (const pageMd of pagesFiles) {
   }
 
   const mdText = fs.readFileSync(path.join(pagesDir, pageMd.name), 'utf-8');
-  const htmlText = headerHtml + marked(mdText) + footerHtml;
+  const htmlText = headerHtml + marked.parse(mdText) + footerHtml;
   const pageName = path.parse(pageMd.name).name;
 
   let htmlDir;
