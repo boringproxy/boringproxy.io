@@ -25,3 +25,7 @@ npm run clean docs     # cleans the docs directory
 ```
 
 See all build jobs and their specifications with `npm run.`
+
+## License
+
+This work is released under the ISC license.
