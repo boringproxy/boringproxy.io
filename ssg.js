@@ -48,7 +48,7 @@ for (const pageMd of pagesFiles) {
 }
 
 if (outDir != './') {
-  for (file of ["styles.css", "logo.svg", "screenshot.png"]) {
+  for (file of ["styles.css", "logo.svg", "logo.png", "screenshot.png"]) {
     fs.copyFileSync(`${file}`, path.join(outDir, file))
   }
 }
