@@ -59,6 +59,8 @@ The main features are:
 
 # Demo Instance
 
+The boringproxy demo instance is currently down.
+<!--
 There is a demo instance at `https://bpdemo.brng.pro`. If you submit your email
 address using the form below, it will create an account for you and send you
 a login link so you can create tunnels.
@@ -68,6 +70,7 @@ a login link so you can create tunnels.
   <input type='text' id='email-input' name='email'>
   <input type='submit' class='button'>
 </form>
+-->
 
 
 # Installation
