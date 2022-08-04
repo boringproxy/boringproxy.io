@@ -1,6 +1,6 @@
 {
   "name": "boringproxy.io",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "ssg.js",
   "directories": {
@@ -17,6 +17,6 @@
   "devDependencies": {
     "highlight.js": "^10.3.2",
     "highlightjs": "^9.16.2",
-    "marked": "^1.2.2"
+    "marked": "^4.0.12"
   }
 }
